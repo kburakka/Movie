@@ -13,6 +13,12 @@
 		B36C1416278B2D2500067DAF /* MovieYASSIRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C1415278B2D2500067DAF /* MovieYASSIRTests.swift */; };
 		B36C1420278B2D2500067DAF /* MovieYASSIRUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C141F278B2D2500067DAF /* MovieYASSIRUITests.swift */; };
 		B36C1422278B2D2500067DAF /* MovieYASSIRUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C1421278B2D2500067DAF /* MovieYASSIRUITestsLaunchTests.swift */; };
+		B36C143B278B2F1200067DAF /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C143A278B2F1200067DAF /* AppRouter.swift */; };
+		B36C143D278B2F3400067DAF /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C143C278B2F3400067DAF /* Router.swift */; };
+		B36C143F278B2F4400067DAF /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C143E278B2F4400067DAF /* Transition.swift */; };
+		B36C1441278B2F4E00067DAF /* PlaceOnWindowTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C1440278B2F4E00067DAF /* PlaceOnWindowTransition.swift */; };
+		B36C1443278B2F5B00067DAF /* PushTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C1442278B2F5B00067DAF /* PushTransition.swift */; };
+		B36C1445278B2F8F00067DAF /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C1444278B2F8F00067DAF /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +49,12 @@
 		B36C141B278B2D2500067DAF /* MovieYASSIRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieYASSIRUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36C141F278B2D2500067DAF /* MovieYASSIRUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieYASSIRUITests.swift; sourceTree = "<group>"; };
 		B36C1421278B2D2500067DAF /* MovieYASSIRUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieYASSIRUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B36C143A278B2F1200067DAF /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		B36C143C278B2F3400067DAF /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		B36C143E278B2F4400067DAF /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		B36C1440278B2F4E00067DAF /* PlaceOnWindowTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceOnWindowTransition.swift; sourceTree = "<group>"; };
+		B36C1442278B2F5B00067DAF /* PushTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushTransition.swift; sourceTree = "<group>"; };
+		B36C1444278B2F8F00067DAF /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +184,7 @@
 		B36C1434278B2E0A00067DAF /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				B36C1444278B2F8F00067DAF /* Helper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -186,8 +199,37 @@
 		B36C1436278B2E1F00067DAF /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				B36C1437278B2EE800067DAF /* App */,
+				B36C1439278B2EF900067DAF /* Core */,
+				B36C1438278B2EF100067DAF /* Transitions */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		B36C1437278B2EE800067DAF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B36C143A278B2F1200067DAF /* AppRouter.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B36C1438278B2EF100067DAF /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				B36C143E278B2F4400067DAF /* Transition.swift */,
+				B36C1440278B2F4E00067DAF /* PlaceOnWindowTransition.swift */,
+				B36C1442278B2F5B00067DAF /* PushTransition.swift */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		B36C1439278B2EF900067DAF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B36C143C278B2F3400067DAF /* Router.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +362,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B36C143B278B2F1200067DAF /* AppRouter.swift in Sources */,
+				B36C1445278B2F8F00067DAF /* Helper.swift in Sources */,
+				B36C143D278B2F3400067DAF /* Router.swift in Sources */,
+				B36C1441278B2F4E00067DAF /* PlaceOnWindowTransition.swift in Sources */,
+				B36C143F278B2F4400067DAF /* Transition.swift in Sources */,
+				B36C1443278B2F5B00067DAF /* PushTransition.swift in Sources */,
 				B36C13FF278B2D2100067DAF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
