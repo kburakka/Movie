@@ -6,6 +6,6 @@
 //
 
 class Constants {
-    static let baseUrl = ""
-    static let apiKey = ""
+    static let baseUrl = "https://api.themoviedb.org/3/"
+    static let apiKey = "&api_key=c9856d0cb57c3f14bf75bdc6c063b8f3"
 }
