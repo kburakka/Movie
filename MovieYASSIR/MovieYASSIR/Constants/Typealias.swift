@@ -8,3 +8,4 @@
 typealias RequestParameters = [String: Any]
 typealias RequestHeaders = [String: String]
 typealias DataProviderResult<T: Decodable> = ((Result<T, Error>) -> Void)
+typealias VoidClosure = (() -> Void)
