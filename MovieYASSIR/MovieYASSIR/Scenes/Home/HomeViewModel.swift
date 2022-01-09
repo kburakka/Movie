@@ -57,7 +57,8 @@ final class HomeViewModel: BaseViewModel<HomeRouter>, HomeViewProtocol {
     }
     
     func didSelectItemAt(index: Int) {
-        print("movie Detail")
+        guard let id = movieCellModels[index].movie.id else { return }
+        router.pushMovieDetail(id: id)
     }
     
     private func setMovieCellModels() {
