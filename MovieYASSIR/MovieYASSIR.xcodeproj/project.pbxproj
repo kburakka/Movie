@@ -51,6 +51,8 @@
 		B36C148D278B436700067DAF /* MovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C148A278B436700067DAF /* MovieDetailViewModel.swift */; };
 		B36C148F278B437200067DAF /* MovieDetailRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C148E278B437200067DAF /* MovieDetailRoute.swift */; };
 		B36C1491278B45EB00067DAF /* MovieDetailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C1490278B45EB00067DAF /* MovieDetailRequest.swift */; };
+		B36C1493278B4A0A00067DAF /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C1492278B4A0A00067DAF /* UIViewController+Extension.swift */; };
+		B36C1495278B4A4100067DAF /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C1494278B4A4100067DAF /* UIApplication+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +118,8 @@
 		B36C148A278B436700067DAF /* MovieDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModel.swift; sourceTree = "<group>"; };
 		B36C148E278B437200067DAF /* MovieDetailRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailRoute.swift; sourceTree = "<group>"; };
 		B36C1490278B45EB00067DAF /* MovieDetailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailRequest.swift; sourceTree = "<group>"; };
+		B36C1492278B4A0A00067DAF /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		B36C1494278B4A4100067DAF /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +242,8 @@
 			isa = PBXGroup;
 			children = (
 				B36C1485278B3CDD00067DAF /* UICollectionView+Extension.swift */,
+				B36C1492278B4A0A00067DAF /* UIViewController+Extension.swift */,
+				B36C1494278B4A4100067DAF /* UIApplication+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -551,6 +557,7 @@
 				B36C147B278B398D00067DAF /* MovieCell.swift in Sources */,
 				B36C1465278B319C00067DAF /* HomeRouter.swift in Sources */,
 				B36C148F278B437200067DAF /* MovieDetailRoute.swift in Sources */,
+				B36C1493278B4A0A00067DAF /* UIViewController+Extension.swift in Sources */,
 				B36C145E278B30C200067DAF /* Constants.swift in Sources */,
 				B36C1441278B2F4E00067DAF /* PlaceOnWindowTransition.swift in Sources */,
 				B36C143F278B2F4400067DAF /* Transition.swift in Sources */,
@@ -560,6 +567,7 @@
 				B36C1443278B2F5B00067DAF /* PushTransition.swift in Sources */,
 				B36C1460278B311700067DAF /* Typealias.swift in Sources */,
 				B36C13FF278B2D2100067DAF /* AppDelegate.swift in Sources */,
+				B36C1495278B4A4100067DAF /* UIApplication+Extension.swift in Sources */,
 				B36C145C278B309500067DAF /* APIDecodableResponseRequest.swift in Sources */,
 				B36C1475278B33BD00067DAF /* MovieResult.swift in Sources */,
 				B36C1469278B31B100067DAF /* HomeRoute.swift in Sources */,

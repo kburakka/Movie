@@ -35,14 +35,16 @@ final class HomeViewModel: BaseViewModel<HomeRouter>, HomeViewProtocol {
     
     func fetchMovies(completion: @escaping VoidClosure) {
         let request = MovieDiscoverRequest(page: 1)
+        showLoadingView()
         dataProvider.request(for: request) { [weak self] result in
+            self?.hideLoadingView()
             switch result {
             case .success(let response):
                 self?.movies = response.results ?? []
                 self?.totalPages = response.totalPages ?? 0
                 self?.currentPage = response.page ?? 0
             case .failure(let error):
-                print(error)
+                self?.showAlert(title: "Error", message: error.localizedDescription)
             }
             completion()
         }

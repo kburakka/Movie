@@ -27,12 +27,14 @@ final class MovieDetailViewModel: BaseViewModel<MovieDetailRouter>, MovieDetailV
         }
 
         let request = MovieDetailRequest(id: movieId)
-        dataProvider.request(for: request) { result in
+        showLoadingView()
+        dataProvider.request(for: request) {[weak self] result in
+            self?.hideLoadingView()
             switch result {
             case .success(let response):
                 completion(response)
             case .failure(let error):
-                print(error)
+                self?.showAlert(title: "Error", message: error.localizedDescription)
             }
         }
     }

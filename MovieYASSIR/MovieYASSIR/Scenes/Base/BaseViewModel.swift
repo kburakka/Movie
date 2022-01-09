@@ -27,10 +27,23 @@ class BaseViewModel<R: Router>: BaseViewModelProtocol {
         self.dataProvider = dataProvider
     }
     
-    func showLoadingView() { }
+    func showLoadingView() {
+        if let viewController = UIApplication.topViewController() {
+            viewController.showSpinner(onView: viewController.view)
+        }
+    }
     
-    func hideLoadingView() {    }
+    func hideLoadingView() {
+        DispatchQueue.main.async {
+            spinner?.removeFromSuperview()
+            spinner = nil
+        }
+    }
     
-    func showAlert(title: String, message: String) {    }
+    func showAlert(title: String, message: String) {
+        if let viewController = UIApplication.topViewController() {
+            viewController.showAlert(title: title, message: message)
+        }
+    }
     
 }
