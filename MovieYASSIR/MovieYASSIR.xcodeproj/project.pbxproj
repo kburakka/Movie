@@ -30,6 +30,13 @@
 		B36C145C278B309500067DAF /* APIDecodableResponseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C145B278B309500067DAF /* APIDecodableResponseRequest.swift */; };
 		B36C145E278B30C200067DAF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C145D278B30C200067DAF /* Constants.swift */; };
 		B36C1460278B311700067DAF /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C145F278B311700067DAF /* Typealias.swift */; };
+		B36C1465278B319C00067DAF /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C1462278B319C00067DAF /* HomeRouter.swift */; };
+		B36C1466278B319C00067DAF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C1463278B319C00067DAF /* HomeViewController.swift */; };
+		B36C1467278B319C00067DAF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C1464278B319C00067DAF /* HomeViewModel.swift */; };
+		B36C1469278B31B100067DAF /* HomeRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C1468278B31B100067DAF /* HomeRoute.swift */; };
+		B36C146C278B31C200067DAF /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C146B278B31C200067DAF /* BaseViewModel.swift */; };
+		B36C146E278B31CC00067DAF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C146D278B31CC00067DAF /* BaseViewController.swift */; };
+		B36C1470278B321700067DAF /* ApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C146F278B321700067DAF /* ApiProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +83,13 @@
 		B36C145B278B309500067DAF /* APIDecodableResponseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDecodableResponseRequest.swift; sourceTree = "<group>"; };
 		B36C145D278B30C200067DAF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B36C145F278B311700067DAF /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
+		B36C1462278B319C00067DAF /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		B36C1463278B319C00067DAF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B36C1464278B319C00067DAF /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		B36C1468278B31B100067DAF /* HomeRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRoute.swift; sourceTree = "<group>"; };
+		B36C146B278B31C200067DAF /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		B36C146D278B31CC00067DAF /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B36C146F278B321700067DAF /* ApiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +198,8 @@
 		B36C1431278B2DE600067DAF /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B36C146A278B31B500067DAF /* Base */,
+				B36C1461278B317A00067DAF /* Home */,
 				B36C1409278B2D2500067DAF /* LaunchScreen.storyboard */,
 			);
 			path = Scenes;
@@ -209,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				B36C1444278B2F8F00067DAF /* Helper.swift */,
+				B36C146F278B321700067DAF /* ApiProvider.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -294,6 +311,26 @@
 				B36C1452278B303900067DAF /* DecodableResponseRequest.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		B36C1461278B317A00067DAF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B36C1462278B319C00067DAF /* HomeRouter.swift */,
+				B36C1463278B319C00067DAF /* HomeViewController.swift */,
+				B36C1464278B319C00067DAF /* HomeViewModel.swift */,
+				B36C1468278B31B100067DAF /* HomeRoute.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B36C146A278B31B500067DAF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B36C146B278B31C200067DAF /* BaseViewModel.swift */,
+				B36C146D278B31CC00067DAF /* BaseViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,12 +470,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				B36C1453278B303900067DAF /* DecodableResponseRequest.swift in Sources */,
+				B36C146C278B31C200067DAF /* BaseViewModel.swift in Sources */,
 				B36C144B278B301000067DAF /* RequestMethod.swift in Sources */,
+				B36C146E278B31CC00067DAF /* BaseViewController.swift in Sources */,
+				B36C1466278B319C00067DAF /* HomeViewController.swift in Sources */,
+				B36C1467278B319C00067DAF /* HomeViewModel.swift in Sources */,
 				B36C143B278B2F1200067DAF /* AppRouter.swift in Sources */,
 				B36C145A278B308900067DAF /* APIDataProvider.swift in Sources */,
 				B36C1445278B2F8F00067DAF /* Helper.swift in Sources */,
+				B36C1470278B321700067DAF /* ApiProvider.swift in Sources */,
 				B36C143D278B2F3400067DAF /* Router.swift in Sources */,
 				B36C144D278B301A00067DAF /* DataProviderProtocol.swift in Sources */,
+				B36C1465278B319C00067DAF /* HomeRouter.swift in Sources */,
 				B36C145E278B30C200067DAF /* Constants.swift in Sources */,
 				B36C1441278B2F4E00067DAF /* PlaceOnWindowTransition.swift in Sources */,
 				B36C143F278B2F4400067DAF /* Transition.swift in Sources */,
@@ -448,6 +491,7 @@
 				B36C1460278B311700067DAF /* Typealias.swift in Sources */,
 				B36C13FF278B2D2100067DAF /* AppDelegate.swift in Sources */,
 				B36C145C278B309500067DAF /* APIDecodableResponseRequest.swift in Sources */,
+				B36C1469278B31B100067DAF /* HomeRoute.swift in Sources */,
 				B36C144F278B302600067DAF /* RequestProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
